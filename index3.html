@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5-3</title>
+    <style>
+        #box {
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 150px;
+            margin: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .hover-element {
+            width: 200px;
+            height: 100px;
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .input-style {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 10px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onclick="changeColor()">Click me to change color</div>
+    <button class="button" onclick="enlargeButton(this)">Click me to enlarge</button>
+    <div class="hover-element">Hover over me</div>
+    <input type="text" class="input-style" placeholder="Focus on me">
+    <p id="text" onclick="changeTextColor()">Click me to change my color</p>
+
+    <script src="script3.js"></script>
+</body>
+</html>
